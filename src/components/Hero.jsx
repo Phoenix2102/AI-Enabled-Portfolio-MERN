@@ -110,7 +110,7 @@ const Hero = () => {
           >
 {`const coder = {
   name: 'Nitish M',
-  skills: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind'],
+  TechEnthusiast: true,
   hardWorker: true,
   quickLearner: true,
   problemSolver: true,

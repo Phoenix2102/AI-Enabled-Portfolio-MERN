@@ -77,13 +77,17 @@ const ProjectCard = ({ project }) => {
         <Title>{project.title}</Title>
         <Desc>{project.description || "A modern, scalable project built using cutting-edge tools and best practices in design, AI, and engineering."}</Desc>
         <Buttons>
-          <Button href={project.github} target="_blank" rel="noopener noreferrer">
-            <FaGithub /> View Code
-          </Button>
-          <Button href={project.demo} target="_blank" rel="noopener noreferrer">
-            <FaExternalLinkAlt /> Live Demo
-          </Button>
-        </Buttons>
+  <Button href={project.github} target="_blank" rel="noopener noreferrer">
+    <FaGithub /> View Code
+  </Button>
+
+  {project.demo && (
+    <Button href={project.demo} target="_blank" rel="noopener noreferrer">
+      <FaExternalLinkAlt /> Live Demo
+    </Button>
+  )}
+</Buttons>
+
       </Content>
     </Card>
   );
